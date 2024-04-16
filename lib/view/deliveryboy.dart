@@ -5,15 +5,16 @@ class DeliveryApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: DefaultTabController(
-        length: 4, // Number of tabs
+        length: 4,
         child: Scaffold(
           appBar: AppBar(
             title: Text(
-              "i am \n Delivery Boy",
-              style: TextStyle(color: Colors.black),
+              "i am,\nDelivery Boy",
+              style:
+                  TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
             ),
             bottom: PreferredSize(
-              preferredSize: Size.fromHeight(150.0),
+              preferredSize: Size.fromHeight(170.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -37,9 +38,7 @@ class DeliveryApp extends StatelessWidget {
                               EdgeInsets.symmetric(horizontal: 15.0),
                           suffixIcon: Icon(Icons.search),
                         ),
-                        onSubmitted: (String value) {
-                          // You can implement search functionality here
-                        },
+                        onSubmitted: (String value) {},
                       ),
                     ),
                   ),
@@ -57,7 +56,6 @@ class DeliveryApp extends StatelessWidget {
           ),
           body: TabBarView(
             children: [
-              // First tab content
               ListView(
                 children: <Widget>[
                   TaskItem(
@@ -80,15 +78,12 @@ class DeliveryApp extends StatelessWidget {
                   ),
                 ],
               ),
-              // Second tab content
               Center(
                 child: Text('History Tab Content'),
               ),
-              // Third tab content
               Center(
                 child: Text('Home Products Tab Content'),
               ),
-              // Fourth tab content
               Center(
                 child: Text('Paper Tab Content'),
               ),
@@ -136,9 +131,7 @@ class TaskItem extends StatelessWidget {
                   children: [
                     TextButton(onPressed: () {}, child: Text("Drop")),
                     ElevatedButton(
-                      onPressed: () {
-                        // Add your onPressed logic here
-                      },
+                      onPressed: () {},
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.orange[700],
                         shape: RoundedRectangleBorder(

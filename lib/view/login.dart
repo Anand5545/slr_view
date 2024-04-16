@@ -54,8 +54,7 @@ class MyApp extends StatelessWidget {
                         border: Border.all(color: Colors.grey),
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      width:
-                          containerWidth, // Set the width to match the text field containers
+                      width: containerWidth,
                       child: TextField(
                         decoration: InputDecoration(
                           labelText: 'Username',
